@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals 3 Practice JS</title>
+</head>
+
+<body>
+    <h1 class="title">
+        Fundamentals 3: Practice Javascript
+    </h1>
+    <br>
+    <div class="directions">
+       <div data-icon="ei-check" data-size="s"></div> For now, just write each function and test the output with console.log.
+        <br>
+        <ol>
+            <li>
+
+                 👍  Write a function called add7 that takes one number and returns that number + 7.
+            </li>
+            <li>
+                👍  Write a function called multiply that takes 2 numbers and returns their product.
+
+            </li>
+            <li>
+                👍  Write a function called capitalize that takes a string and returns that string with only the first
+                letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+
+            </li>
+            <li>
+                👍  Write a function called lastLetter that takes a string and returns the very last letter of that string:
+                <br>
+                lastLetter("abcd") should return "d"
+            </li>
+        </ol>
+
+    </div>
+    <script>
+        // 1.
+        function add7(number) {
+            return number + 7;
+        }
+
+        console.log(add7(17));
+
+        // 2.
+        function multiply(a, b) {
+            return a * b;
+        }
+        console.log(multiply(5,9));
+
+        // 3.
+        function capitalize(string) {
+            let lower = string.toLowerCase();
+            let firstLetter = string[0];
+            let upperFirst = firstLetter.toUpperCase();
+            let minusFirst = lower.substring(1);
+            return upperFirst + minusFirst;
+        } 
+        console.log(capitalize("abcd"));
+        console.log(capitalize("AbCd"));
+        console.log(capitalize("aBcD"));
+        console.log(capitalize("ABCD"));
+
+        // 4.
+        function lastLetter(string) {
+            let length = string.length;
+            let lastIndex = length - 1;
+            let letter = string[lastIndex];
+            return letter;
+        }
+        console.log(lastLetter("abcd"));
+    </script>
+
+</body>
+
+</html>
