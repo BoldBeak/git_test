@@ -13,6 +13,17 @@ let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz
   // prompt creates a pop up to ask for a number from the user
 
 // **** STEP 2: Loop up to user input number ****
+// tested loop and pop-up before moving forward
+
+/* *** STEP 3: Print Fizz ***
+    tested with "if (i % 3 === 0)" before moving forward. */
 for (let i = 1; i <= answer; i++) {
-  console.log(i);
-}
+  if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+  }
+
